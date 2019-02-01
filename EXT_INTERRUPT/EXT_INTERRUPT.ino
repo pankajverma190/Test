@@ -1,4 +1,9 @@
+// External Interrupt for github
+
 const byte interruptPin = 2;
+int data =10;
+char str;
+static int dummmy;
 volatile int interruptCounter = 0;
 int numberOfInterrupts = 0;
  
@@ -32,4 +37,3 @@ void loop() {
       Serial.println(numberOfInterrupts);
   }
 }
-
